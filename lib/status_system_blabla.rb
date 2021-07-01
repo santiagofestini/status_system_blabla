@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 require_relative "status_system_blabla/version"
-require 'status_system_blabla/activity_status'
+#require 'status_system_blabla/activity_status'
 
 module StatusSystemBlabla
-  class StatusSystemBlabla
+  class StatusSystem
 
     def get_actives all_items
       all_items.select { |an_item| item_status(an_item).is_active? }

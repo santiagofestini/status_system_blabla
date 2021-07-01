@@ -1,11 +1,13 @@
-class StatusSystemBlabla::NewStatus < StatusSystemBlabla::ActivityStatus
+module StatusSystemBlabla
+  class NewStatus < ActivityStatus
 
-  def activate
-    @object.update({status: 'active'}) 
+    def activate
+      @object.update({status: 'active'}) 
+    end
+
+    def is_active?
+      false
+    end
+
   end
-
-  def is_active?
-    false
-  end
-
 end
